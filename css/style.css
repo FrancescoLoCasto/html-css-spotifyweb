@@ -77,8 +77,10 @@ header{
 }
 
 main{
+   height: calc(100vh - 100px);
    width: calc(100% - 233px);
    background-color: blue;
+   overflow-y: auto;
 }
 
 #top-black-banner{
