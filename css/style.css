@@ -5,3 +5,29 @@
    margin: 0;
    box-sizing: border-box;
 }
+
+.flex{
+   display: flex;
+}
+
+.flex-wrap{
+   flex-wrap: wrap;
+}
+
+
+header{
+   background-color: black;
+   width: 233px;
+   height: calc(100vh - 100px);
+}
+
+main{
+   width: calc(100% - 233px);
+   background-color: blue;
+}
+
+footer{
+   background-color: gray;
+   height: 100px;
+   width: 100%;
+}
