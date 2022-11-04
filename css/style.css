@@ -75,6 +75,40 @@ main{
    background-color: blue;
 }
 
+#top-black-banner{
+   width: 100%;
+   height: 70px;
+   background-color: rgb(95, 95, 95);
+}
+
+#small-list-banner{
+   width: 100%;
+   height: 50px;
+   background-color: coral;
+}
+
+#recetly-played{
+   width: 100%;
+   height: 450px;
+   background-color: rgb(169, 49, 6);
+}
+
+.container-disk{
+   width: 100%;
+   height: 350px;
+   background-color: rgb(92, 25, 0);
+
+}
+
+.card{
+   width: 200px;
+   height: 200px;
+   background-color: black;
+   margin: 1rem;
+}
+
+
+
 footer{
    background-color: gray;
    height: 100px;
