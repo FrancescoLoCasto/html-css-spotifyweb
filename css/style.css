@@ -14,6 +14,10 @@
    flex-wrap: wrap;
 }
 
+.p-fixed{
+   position: fixed;
+}
+
 
 header{
    background-color: black;
@@ -100,11 +104,33 @@ main{
 
 }
 
+.container-disk-two{
+   width: 100%;
+   height: 350px;
+   background-color: rgb(92, 84, 0);
+
+}
+
+.container-disk-third{
+   width: 100%;
+   height: 350px;
+   background-color: rgb(92, 0, 32);
+
+}
+
 .card{
    width: 200px;
    height: 200px;
    background-color: black;
    margin: 1rem;
+}
+
+.card-radius{
+   width: 200px;
+   height: 200px;
+   background-color: black;
+   margin: 1rem;
+   border-radius: 100%;
 }
 
 
