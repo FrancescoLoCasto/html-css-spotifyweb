@@ -21,6 +21,55 @@ header{
    height: calc(100vh - 100px);
 }
 
+#logo{
+   width: 100%;
+   height: 70px;
+   background-color: aqua;
+}
+
+#icon{
+   background-color: darkgoldenrod;
+}
+
+#playlist{
+   margin-top: 2rem;
+   background-color: brown;
+}
+
+#hd-foot{
+   width: 100%;
+   height: 80px;
+   background-color: deeppink;
+   margin-top: 17.5rem;
+}
+
+.icon-list{
+   color: white;
+   padding-left: 2rem;
+}
+
+.icon-list ul{
+   list-style: none;
+   margin-top: 1rem;
+}
+
+.icon-list li{
+   margin-top: 1rem;
+}
+
+.playlist-element{
+   color: white;
+}
+
+.playlist-element h4{
+   margin: 1rem 4rem;
+}
+
+.playlist-element ul, li{
+   margin: 1rem 2rem;
+   list-style-type: none;
+}
+
 main{
    width: calc(100% - 233px);
    background-color: blue;
