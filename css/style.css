@@ -81,6 +81,10 @@ section.upgrade #upgrade-button{
    color: white;
 }
 
+section.upgrade div:hover{
+   transform: scale(1);
+}
+
 /* Header content */
 
 img.logo-big{
@@ -195,7 +199,11 @@ figure.card{
    text-align: center;
 }
 
-/*? Title settings main */
+figure.card .hv-img:hover{
+   background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Title settings main */
 
 div.title{
    padding: 30px 10px;
