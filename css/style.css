@@ -1,3 +1,14 @@
+
+/* COLOR ROOT */
+
+:root{
+   --light-black-color: #0D0F14;
+   --light-blue-color: #161A20;
+   --grey-color: #252525;
+   --lime-color: #BCFE4C;
+   --text-grey-color: #7A7C80;
+}
+
 /* reset */
 
 *{
@@ -6,162 +17,317 @@
    box-sizing: border-box;
 }
 
-
-
 .flex{
    display: flex;
 }
 
-.flex-wrap{
+.wrap{
    flex-wrap: wrap;
 }
 
-.p-fixed{
-   position: fixed;
+.justify-center{
+   justify-content: center;
 }
 
+.align-center{
+   align-items: center;
+}
+.align-end{
+   align-items: flex-end;
+}
+
+.flex-end{
+   justify-content: flex-end;
+}
+
+body{
+   color: white;
+   min-width: 370px;
+}
 
 header{
+   width: 225px;
+   height: calc(100vh - 80px);
    background-color: black;
-   width: 233px;
-   height: calc(100vh - 100px);
-}
-
-img.logo-big{
-   width: 80%;
-}
-
-
-
-#logo{
-   width: 100%;
-   height: 70px;
-   background-color: aqua;
-}
-
-#icon{
-   background-color: darkgoldenrod;
-}
-
-#playlist{
-   margin-top: 2rem;
-   background-color: brown;
-}
-
-#hd-foot{
-   width: 100%;
-   height: 80px;
-   background-color: deeppink;
-   margin-top: 17.5rem;
-}
-
-.icon-list{
-   color: white;
-   padding-left: 2rem;
-}
-
-.icon-list ul{
-   list-style: none;
-   margin-top: 1rem;
-}
-
-.icon-list li{
-   margin-top: 1rem;
-}
-
-.playlist-element{
-   color: white;
-}
-
-.playlist-element h4{
-   margin: 1rem 4rem;
-}
-
-.playlist-element ul, li{
-   margin: 1rem 2rem;
-   list-style-type: none;
+   color:var(--text-grey-color);
 }
 
 main{
-   height: calc(100vh - 100px);
-   width: calc(100% - 233px);
-   background-color: blue;
-   overflow-y: auto;
+   width: calc(100% - 225px);
+   height: calc(100vh - 80px);
+   background-color: var(--light-blue-color);
+   overflow-y: scroll;
+   scroll-behavior: smooth;
 }
 
-#top-black-banner{
-   width: 100%;
-   height: 70px;
-   background-color: rgb(95, 95, 95);
-}
-
-#small-list-banner{
-   width: 100%;
-   height: 50px;
-   background-color: coral;
-}
-
-#recetly-played{
-   width: 100%;
-   background-color: rgb(169, 49, 6);
-
-}
-
-.container-disk{
-   width: 100%;
-   background-color: rgb(92, 25, 0);
-   flex-wrap: wrap;
-
-
-}
-
-.container-disk-two{
-   width: 100%;
-   background-color: rgb(92, 84, 0);
-   flex-wrap: wrap;
-
-}
-
-.container-disk-third{
-   width: 100%;
-   background-color: rgb(92, 0, 32);
-   flex-wrap: wrap;
-
-
-
-}
-
-.card{
-   width: 200px;
-   height: 200px;
-   background-color: black;
-   margin: .5rem;
-}
-
-.card-radius{
-   width: 200px;
-   height: 200px;
-   background-color: black;
-   margin: 1rem;
-   border-radius: 100%;
-}
-
-
-
-footer{
-   background-color: gray;
+/* Section Upgrade */
+section.upgrade{
    height: 100px;
    width: 100%;
+   background-color: var(--light-black-color);
+}
+
+section.upgrade #upgrade-button{
+   margin-right: 10px;
+   border-radius:28px;
+   cursor:pointer;
+   background-color: var(--light-black-color);
+   font-size: .9rem;
+   font-weight: bold;
+   padding:10px 40px;
+   text-transform: uppercase;
+   text-decoration:none;
+   color: white;
+}
+
+/* Header content */
+
+img.logo-big{
+   width: 70%;
+}
+
+img.logo-small{
+   width: 100%;
+}
+
+section.home{
+   margin-top: 32px;
+}
+
+section.home ul>li,
+section.playlist ul>li{
+   list-style-type: none;
+   font-weight: bold;
+   font-size: 0.9rem;
+}
+
+div.header-container li{
+   margin-top: .7rem;
+}
+
+div.header-container img.icon{
+   width: 20px;
+   vertical-align: text-bottom;
+}
+
+section.playlist{
+   margin-top: 30px;
+}
+
+section.playlist p:first-child{
+   text-transform: uppercase;
+   font-size: 1.2rem;
+   font-weight: bolder;
+   margin: 1rem 0;
+   color: white;
+}
+
+section.playlist i{
+   font-size: 2.5rem;
+   vertical-align: middle;
+   margin-right: 10px;
+}
+
+ul.small-view,
+.logo-small{
+   display: none;
+}
+
+section.download-profile{
+   margin-top:190px ;
+}
+
+section.download-profile hr{
+   margin: 5px 0;
+}
+
+section.download-profile hr + p{
+   color: white;
+   font-weight: bolder;
+}
+
+section.download-profile img.small{
+   display: none;
 }
 
 
+/* Nav bar */
+nav ul a{
+   text-decoration: none;
+   color: var(--text-grey-color);
+}
 
+nav ul>li{
+   padding: .8rem;
+   list-style-type: none;
+   text-transform: uppercase;
+}
+/* Container */
+
+div.main-container{
+   width: 100%;
+   padding: 15px;
+}
+
+div.header-container{
+   height: calc(100vh - 90px);
+   padding: 2rem 2.5rem 2.5rem 1.5rem;
+}
+
+/*? Section Played */
+
+figure.card{
+   width: calc(100% / 6 );
+   margin-top: 20px;
+   text-align: center;
+}
+
+/*? Title settings main */
+
+div.title{
+   padding: 30px 10px;
+}
+
+h1{
+   font-size: 1.8rem;
+}
+
+h4{
+   color: var(--text-grey-color);
+}
+
+/* Figure / Figcaption */
+
+figure img{
+   width: 90%;
+}
+
+figcaption p,
+span{
+   font-weight: bold;
+}
+
+figcaption span{
+   font-size: .9rem;
+   color: var(--text-grey-color);
+}
+
+section.suggested{
+   margin-top: 50px;
+}
+
+/* Popular */
+
+figure.card-sugg,
+.card-popular{
+   width: calc(100% / 6 );
+   text-align: center;
+}
+
+figure.card-popular{
+   overflow: hidden;
+}
+
+figure.card-popular img{
+   border-radius: 50%;
+}
+
+/* Footer */
+footer{
+   width: 100%;
+   height: 80px;
+   background-color: var(--grey-color);
+}
 
 /* Media Query */
 
-@media screen and (max-width: 768px){
+/* M */
+@media screen and (max-width:1250px) {
+
+   figure img{
+       width: 95%;
+   }
+
+   figure.card{
+       width: calc(100% / 4 );
+   }    
+
+   figure.card-sugg{
+       width: calc(100% / 4 );
+       text-align: center;
+   }
+
+   figure.card-popular{
+       width: calc(100% / 4 );
+       text-align: center;
+   }
+
+  
+}
+
+/* S */
+@media screen and (max-width:900px){
+
+   figure img{
+       width: 90%;
+   }
+
+   figure.card{
+       width: calc(100% / 2 );
+       }    
+
+   figure.card-sugg{
+       width: calc(100% / 2 );
+   }
+
+   figure.card-popular{
+       width: calc(100% / 2 );
+   }
+
+}
+
+/* XS */
+@media screen and (max-width:575px){
+
+   header{
+       width: 50px;
+   }
+
    main{
-         max-width: 1120px;
-         background-color: blue;
+       width: calc(100% - 50px);
+       
+   }
+
+   section.played{
+       flex-wrap: wrap;
+   }
+
+   div.header-container {
+       padding: 12px;
+   }
+
+   div.header-container img.icon {
+       width: 25px;
+   }
+
+   ul.small-view,
+   .logo-small,
+   section.download-profile img.small{
+   display: block;
+   }
+
+   ul.standard-view,
+   .logo-big,
+   section.playlist,
+   section.download-profile p{
+       display: none;
+   }
+
+   section.home {
+       margin-top: 15px;
+   }
+
+   section.download-profile {
+       margin-top: 610px;
    }
 }
