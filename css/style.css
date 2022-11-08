@@ -201,6 +201,18 @@ div.card{
    opacity: 0.5;
 }
 
+.playlogo{
+   height: 80px;
+   width: 80px;
+   position: absolute;
+   bottom: 55%;
+   left: 18.5%;
+}
+
+div.playlogo img:hover{
+
+}
+
 
 
 /* Title settings main */
