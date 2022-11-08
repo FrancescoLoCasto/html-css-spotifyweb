@@ -68,18 +68,19 @@ section.upgrade{
    background-color: var(--light-black-color);
 }
 
-section.upgrade .upgrade-button{
+.upgrade-button{
    height: 40px;
-   cursor:pointer;
    font-size: .9rem;
    font-weight: bold;
    padding:10px 40px;
+   margin-right: 2rem;
    color: white;
-   border: white double;
+   border: white solid;
+   border-radius: 2rem;
 }
 
-div.container-button span:hover{
-   transform: scale(1.5);
+div.container-button .upgrade-button:hover{
+   transform: scale(1.2);
 }
 
 /* Header content */
@@ -196,10 +197,11 @@ div.card{
    text-align: center;
 }
 
-
 .img-bg img:hover{
    opacity: 0.5;
 }
+
+
 
 /* Title settings main */
 
