@@ -196,13 +196,9 @@ div.card{
    text-align: center;
 }
 
-.img-bg{
-   position: relative;
-}
 
 .img-bg img:hover{
-   position: absolute;
-   background-color: #7A7C80;
+   opacity: 0.5;
 }
 
 /* Title settings main */
