@@ -192,28 +192,36 @@ div.header-container{
 
 /* Section Played */
 
+
+
 div.card{
    width: calc(100% / 6 );
    margin-top: 20px;
    text-align: center;
-   position: relative;
 }
 
 .img-bg{
+   position: relative;
 }
 
 
-.playlogo{
+.playlogo-container{
    position: absolute;
-   height: 70px;
-   width: 70px;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
    
 }
 
-.playlogo img{}
+.playlogo-container img{
+   background-color: rgba(0, 0, 0, 0.6);
+   border-radius: 3rem;
+}
+
+.playlogo-container img{
+}
+
+
 
 .img-bg img:hover{
    opacity: 0.5;
